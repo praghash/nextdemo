@@ -2,6 +2,7 @@
 import styles from "./page.module.css";
 // import FetchAPI from "./FetchAPI";
 import ReactWindow from "./ReactWindow";
+import TodoApp from "./todoapp/page";
 
 export default function Home() {
   const arryaItems = Array.from({ length: 1000 }).map((_, i) => {
@@ -73,9 +74,10 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Hello, Next.js App Router!</h1>
         {/* <FetchAPI /> */}
-        <ReactWindow items={arryaItems} />
+        <TodoApp/>
+        {/* <ReactWindow items={arryaItems} /> */}
         <p className={styles.description}>
-          This is the homepage of your Next.js application.
+          End of Content
         </p>
       </main>
     </div>
